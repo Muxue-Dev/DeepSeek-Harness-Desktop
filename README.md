@@ -46,3 +46,9 @@
 - 方法：运行 `源码\build.bat` 一键重新编译生成 exe
 
 ## 📂 目录结构
+DeepSeek-Harness-Client.exe 主程序 Microsoft.Web.WebView2.*.dll 内嵌浏览器（WebView2） WebView2Loader.dll 内嵌浏览器加载器 runtime\node\node.exe 内置独立 Node.js config.txt 配置（路径都在这里改） 源码\launcher.cs 客户端源码（C#） 源码\build.bat 一键编译脚本
+
+## 📄 开源协议
+
+- 客户端源码：MIT License
+- 「深海女仆工坊」皮肤为第三方作品（CC BY-NC-SA），不随本仓库分发
