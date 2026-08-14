@@ -1,0 +1,16 @@
+# 用户数据与隐私（绝不上传）
+WebView2Data/
+启动日志.txt
+check-result.txt
+*.bak
+
+# 编译产物与运行时（放 Release，不进仓库）
+*.exe
+*.dll
+runtime/
+app/
+
+# 系统杂项
+Thumbs.db
+Desktop.ini
+.DS_Store
