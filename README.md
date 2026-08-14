@@ -28,16 +28,26 @@
 
 ## 🎨 皮肤（可选 · 免费）
 
-软件默认是官方界面（如上图）。想要「深海女仆工坊」双女仆皮肤，可自行安装：
+软件默认是官方界面（如上图）。想要「深海女仆工坊」双女仆皮肤（下图），可自行安装。
 
-- 皮肤项目：[dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)（作者 Small-tailqwq，免费）
-- 注！此项目含有以 @上善 创作的鲸鱼娘为基础的二次创作，CC 协议，**禁止商用**。
+**皮肤项目**：[dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)（作者 Small-tailqwq）
 
-**安装方法**：装好客户端后，把你的 AI 助手喊来，把这个皮肤项目链接发它，让它帮你装即可。装好后：设置 → 插件 → Web UI 插件 → 皮肤中心 → 选「深海女仆工坊」。
+**安装方法（懒人版）**：装好客户端后，对你的 AI 助手说一句：
+> 安装一下这个皮肤包：https://github.com/Small-tailqwq/dsh-deep-whale
+
+装好后：设置 → 插件 → Web UI 插件 → 皮肤中心 → 选「深海女仆工坊」。
 
 ![双女仆皮肤](skin.png)
 
 ![皮肤中心位置](skin-center.png)
+
+**版权与许可**：
+- 本皮肤为衍生创作，整体以 **CC BY-NC-SA 4.0**（署名-非商业性使用-相同方式共享）发布，**禁止商业使用**。
+- 署名链：
+  - 原作：**上善**（鲸鱼娘角色形象，Pixiv · Bilibili：上善无形）
+  - 二次创作：**拉链管 ZipZipPipe**（加入 DeepSeek 元素的女仆鲸鱼娘设计，Bilibili：拉链管道）
+  - 皮肤：**Small-tailqwq**
+- 皮肤问题请到皮肤项目的 [Issue](https://github.com/Small-tailqwq/dsh-deep-whale/issues) 反馈，勿打扰上面两位原作者。
 
 ## 📖 怎么用
 
@@ -56,4 +66,4 @@ DeepSeek-Harness-Client.exe 主程序 Microsoft.Web.WebView2.*.dll 内嵌浏览�
 ## 📄 开源协议
 
 - 客户端源码：MIT License
-- 「深海女仆工坊」皮肤为第三方作品（CC BY-NC-SA），不随本仓库分发
+- 「深海女仆工坊」皮肤为第三方作品（CC BY-NC-SA 4.0），不随本仓库分发，请到皮肤项目获取
