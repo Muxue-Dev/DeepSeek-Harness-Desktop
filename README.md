@@ -3,6 +3,8 @@
 > **版本 v1.0.0** · 作者 **Muxue-Dev（幻曦之殇）**
 > GitHub：https://github.com/Muxue-Dev ｜ B站：https://space.bilibili.com/110628804
 
+> ⚠️ **重要声明**：本项目是**个人开源作品**（个人制作、免费分享），**与 DeepSeek（深度求索）官方无关**，并非 DeepSeek 官方软件。它只是个人把 DeepSeek Harness 网页版封装成桌面客户端的小工具，供免费交流学习使用。
+
 ## 📥 下载安装包（永久免费）
 
 **夸克网盘下载（推荐，不限次数）：**
