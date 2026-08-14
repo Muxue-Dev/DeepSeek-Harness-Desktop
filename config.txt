@@ -1,0 +1,13 @@
+# DeepSeek Harness 客户端 · 配置模板
+# 每行一个「键=值」，以 # 开头的是注释。路径里有空格或中文都直接写。
+
+# APP_DIR = DSH 程序本体目录（里面要有 node_modules\@deepseek-ai\dsh\lib\bin.js）
+# 可以填绝对路径，也可以填相对路径（相对客户端 exe 所在目录，打包时填 app 即可）
+APP_DIR=app
+
+# NODE_PATH 留空 = 自动使用内置独立 Node（runtime\node\node.exe）
+# NODE_PATH=
+
+URL=http://127.0.0.1:3080
+HOST=127.0.0.1
+PORT=3080

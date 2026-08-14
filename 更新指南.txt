@@ -1,0 +1,40 @@
+============================================================
+  客户端「升级 / 维护」指南 —— 给未来的智能体（或开发者）
+============================================================
+
+目录结构
+  DeepSeek-Harness-Client.exe           主程序
+  Microsoft.Web.WebView2.Core.dll       内嵌浏览器核心（WebView2）
+  Microsoft.Web.WebView2.WinForms.dll   内嵌浏览器 WinForms 封装
+  WebView2Loader.dll                    内嵌浏览器原生加载器
+  runtime\node\node.exe                 内置独立 Node.js（v22.22.2）
+  config.txt                            配置（路径都在这里改）
+  版本.txt / 更新日志.txt               版本号 / 更新记录
+  源码\launcher.cs                      客户端源码（C# + WebView2）
+  源码\build.bat                        一键重新编译
+
+怎么升级
+  1. 改 源码\launcher.cs。
+  2. 运行 源码\build.bat 重新编译（生成 exe 覆盖主程序）。
+  3. 版本.txt + 源码里的 Version 常量 版本号 +1。
+  4. 把改动写进 更新日志.txt。
+
+编译命令（等价于 build.bat）
+  csc.exe /target:winexe /out:..\DeepSeek-Harness-Client.exe ^
+    /r:<FW>\System.Windows.Forms.dll /r:<FW>\System.Drawing.dll ^
+    /r:..\Microsoft.Web.WebView2.WinForms.dll ^
+    /r:..\Microsoft.Web.WebView2.Core.dll launcher.cs
+  其中 <FW> = C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+
+关键原理
+  - 后台：用内置 node 运行 app\node_modules\@deepseek-ai\dsh\lib\bin.js web
+  - 界面：WebView2 内嵌显示 http://127.0.0.1:3080
+  - 皮肤：C:\Users\ASUS\.dsh\cordis.patch.yml（别误删）
+  - Node 探测顺序：runtime\node\node.exe → WorkBuddy → 系统 PATH
+
+注意
+  - 改完源码必须重新编译才生效。
+  - 自检：运行 DeepSeek-Harness-Client.exe --check 生成 check-result.txt。
+  - 三个 WebView2 DLL 必须和 exe 放一起，缺一个界面就打不开。
+  - 升级 WebView2：从 nuget.org 下 Microsoft.Web.WebView2 包，
+    取 lib\net462\ 两个 DLL + runtimes\win-x64\native\WebView2Loader.dll。
